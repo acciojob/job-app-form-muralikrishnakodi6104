@@ -7,21 +7,25 @@
 	<script type="text/javascript" src="./script.js"></script>
 
 	<form method="POST">
+		<!-- Name Field -->
 		<label for="name">Name</label>
 		<input type="text" id="name" required>
 		<br>
 
+		<!-- Email Field -->
 		<label for="email">Email</label>
 		<input type="email" id="email" required>
 		<br>
 
-		<label>Gender</label>
-		<input type="radio" id="male" name="gender" value="male" required>
+		<!-- Gender Field (Both radios have IDs linked to matching labels) -->
 		<label for="male">Male</label>
-		<input type="radio" id="female" name="gender" value="female" required>
+		<input type="radio" id="male" name="gender" value="male" required>
+		
 		<label for="female">Female</label>
+		<input type="radio" id="female" name="gender" value="female" required>
 		<br>
 
+		<!-- Laptop Brands Dropdown -->
 		<label for="laptop">Laptop Brands</label>
 		<select id="laptop">
 			<option value="apple">Apple</option>
@@ -30,22 +34,27 @@
 		</select>
 		<br>
 
+		<!-- Age Field -->
 		<label for="age">Age</label>
 		<input type="number" id="age" required>
 		<br>
 
+		<!-- Date of Birth Field -->
 		<label for="dob">Date of Birth</label>
 		<input type="date" id="dob" required>
 		<br>
 
+		<!-- Password Field -->
 		<label for="password">Password</label>
 		<input type="password" id="password" required>
 		<br>
 
+		<!-- Portfolio URL Field (Not required based on your specs) -->
 		<label for="portfolio">Portfolio URL</label>
-		<input type="url" id="portfolio" required>
+		<input type="url" id="portfolio">
 		<br>
 		
+		<!-- Submit Button -->
 		<button type="submit">Submit</button>
 		<br>
 	</form>
