@@ -1,60 +1,66 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<script type="text/javascript" src="./script.js"></script>
 
-	<form method="POST">
-		<!-- Name Field -->
-		<label for="name">Name</label>
-		<input type="text" id="name" required>
-		<br>
+    <form method="POST">
 
-		<!-- Email Field -->
-		<label for="email">Email</label>
-		<input type="email" id="email" required>
-		<br>
+        <!-- Name Field -->
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+        <br>
 
-		<!-- Gender Field (Both radios have IDs linked to matching labels) -->
-		<label for="Gender">Gender</label>
-		<input type="radio"  name='gender'  required>
-		
-		<br>
+        <!-- Email Field -->
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+        <br>
 
-		<!-- Laptop Brands Dropdown -->
-		<label for="laptop">Laptop Brands</label>
-		<select id="laptop">
-			<option value="apple">Apple</option>
-			<option value="asus">Asus</option>
-			<option value="hp">HP</option>
-		</select>
-		<br>
+        <!-- Gender Field -->
+        <label>Gender</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
 
-		<!-- Age Field -->
-		<label for="age">Age</label>
-		<input type="number" id="age" required>
-		<br>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <br>
 
-		<!-- Date of Birth Field -->
-		<label for="dob">Date of Birth</label>
-		<input type="date" id="dob" required>
-		<br>
+        <!-- Laptop Brands Dropdown -->
+        <label for="laptop">Laptop Brands</label>
+        <select id="laptop">
+            <option value="apple">Apple</option>
+            <option value="asus">Asus</option>
+            <option value="hp">HP</option>
+        </select>
+        <br>
 
-		<!-- Password Field -->
-		<label for="password">Password</label>
-		<input type="password" id="password" required>
-		<br>
+        <!-- Age Field -->
+        <label for="age">Age</label>
+        <input type="number" id="age" required>
+        <br>
 
-		<!-- Portfolio URL Field (Not required based on your specs) -->
-		<label for="portfolio">Portfolio URL</label>
-		<input type="url" id="portfolio">
-		<br>
-		
-		<!-- Submit Button -->
-		<button type="submit">Submit</button>
-		<br>
-	</form>
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" required>
+        <br>
+
+        <!-- Password Field -->
+        <label for="password">Password</label>
+        <input type="password" id="password" required>
+        <br>
+
+        <!-- Portfolio URL (Optional) -->
+        <label for="portfolio">Portfolio URL</label>
+        <input type="url" id="portfolio">
+        <br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <script src="./script.js"></script>
 </body>
 </html>
